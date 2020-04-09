@@ -1,0 +1,72 @@
+Access modifiers :
+             same_class     Same_package         sub_class         Different_package
+        
+//public        yes                      yes                        yes             	yes
+//protected   yes                     yes                         yes              	 no
+//default       yes                     yes         Same_pckg=yes/dif=no    no
+//private       yes      	            no	                          no                      no
+---------------------------------------------------------------------------------------------
+Super constructor executes first then sub constructor 
+---------------------------------------------------------------------------------------------
+No multiple inhertence in Java
+---------------------------------------------------------------------------------------------
+If B extends from A and C extends from B so C takes A&B compenents
+---------------------------------------------------------------------------------------------
+If B extends from A and C extends from B when we create object from "C"
+He goes to it's super constructor "B" if B has a super execute it first "A"
+(A-->>B-->C)
+else execute "B" then "C"
+(B-->C)
+---------------------------------------------------------------------------------------------
+In inheritance if class extends from another and the another have an argumentic constructor so the super class must have a default constructor even if it is empty
+E.x: If B extends from A and A have an argumentic constructor so A must include a default constructor even if it is empty
+---------------------------------------------------------------------------------------------
+Overloading : 
+- The functions must have differences in thier parameters 
+- The functions must be in the same class
+---------------------------------------------------------------------------------------------
+Overriding :
+- The base function is in the super class and the overrided is in the sub class
+- The functions have the same head but different in the body (implementation)
+--------------------------------------------------------------------------------------------- 
+Abstract Class :
+- Can't make an object from it
+- Classes extends from it 
+---------------------------------------------------------------------------------------------
+Abstract Method :
+- Must be in an abstract Class
+- Can't be implemented in the super class (only head with a semicolon)
+- Must be implemented in all sub classes of it's class
+---------------------------------------------------------------------------------------------
+Final :
+* Variable : can't be changed (constant) && must be initialized
+* Method : can't be overrided
+* Class : can't extend from it (can't be super class)
+---------------------------------------------------------------------------------------------
+Final vs Abstract 
+            -----------------------------------------------
+            |       Class          |        Method        |
+            -----------------------------------------------
+Final       |   Can't be super     |   can't be overrided |
+            -----------------------------------------------
+Abstract    |  Can't take object   |   must be overrided  |
+            -----------------------------------------------
+---------------------------------------------------------------------------------------------
+Static :
+* Variable : All of the objects have the same value of that's variable
+* Function : Called by Class name
+---------------------------------------------------------------------------------------------
+Interface : 
+* Variables : is public final static if you write or not
+* Methods : public static abstract(No declaration in the interface)
+* All abstract methods in the interface must be public during
+  their implementation
+* The class which implements an interface can have variables,constructor,methods
+  and can be a super class like any class
+  but must implements the interface's abstract methods
+---------------------------------------------------------------------------------------------
+* Class can't extend from a lot of classes (No multiple inheritance
+* Class can implement a lot of interfaces
+* Interface can extend from another interface
+---------------------------------------------------------------------------------------------
+ 
